@@ -1,0 +1,33 @@
+.container__modal{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease;
+}
+.container__modal.active {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    /*pointer-events: all;*/
+    transition: 0.5s ;
+}
+.container__modal_content{
+    position: absolute;
+    top: 170px;
+    right: 150px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: white;
+    width: 650px;
+
+}
+.container__modal_content.active{
+}

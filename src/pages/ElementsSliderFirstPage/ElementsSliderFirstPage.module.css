@@ -1,0 +1,43 @@
+.container__elements{
+    position: absolute;
+    top: 90px;
+    margin-left: 100px;
+}
+.welcome{
+    margin-bottom: 0;
+    font-weight: lighter;
+    font-size: 50px;
+    font-family: "Century Gothic";
+}
+.text{
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 100px;
+    font-family: "Century Gothic";
+}
+.button_next{
+    padding: 25px;
+    position: absolute;
+    bottom: 20px;
+    left: 500px;
+    width: 280px;
+    border: none;
+    border-radius: 40px;
+    background-color: hotpink;
+    font-size: 25px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: right;
+}
+.arrow_right{
+    position: absolute;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    left: 20px;
+    border-radius: 40px;
+}

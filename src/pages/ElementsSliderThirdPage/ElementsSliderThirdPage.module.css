@@ -1,0 +1,116 @@
+.image{
+
+}
+
+
+.container__elements_top{
+    position: absolute;
+    top: 200px;
+    right: 280px;
+}
+
+.welcome{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: "Century Gothic";
+    margin: 0 0 0 10px;
+}
+.text{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-family: "Century Gothic";
+}
+
+.container__elements_bottom{
+    position: absolute;
+    top: 380px;
+    left: 300px;
+    right: 180px;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    grid-template-rows: 1.2fr 0.1fr;
+    grid-template-areas:
+    "nav rightTop"
+    "nav rightBottom";
+    grid-gap: 30px;
+}
+.left_text{
+    grid-area: nav;
+    background: white;
+    padding: 30px;
+    font-size: 20px;
+    font-family: "Century Gothic";
+    border-radius: 30px;
+}
+.right_text{
+    grid-area: rightTop;
+    background: white;
+    padding: 30px;
+    font-size: 20px;
+    font-family: "Century Gothic";
+    border-radius: 30px;
+}
+.right_button{
+    grid-area: rightBottom;
+    border: none;
+    border-radius: 40px;
+    background-color: hotpink;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 500;
+    text-align: right;
+    padding-right: 30px;
+    height: 60px;
+}
+.arrow_right{
+    position: absolute;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    right: 175px;
+    border-radius: 40px;
+}
+.container__modal_elements_top{
+
+}
+.modal_welcome{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: "Century Gothic";
+    margin: 0 0 0 110px;
+}
+.modal_text{
+    margin: 0 0 0 100px;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-family: "Century Gothic";
+}
+.container__modal_elements_bottom{
+    margin-left: 110px;
+    max-width: 460px;
+    display: grid;
+    grid-gap: 10px;
+}
+.modal_number{
+    font-size: 20px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color: lightblue;
+}
+.modal_left_text{
+    font-size: 18px;
+}
+.modal_right_button{
+    background: no-repeat center/25px url("./../../icons/icon_thirdPage_modal_button.png");
+    height: 50px;
+    width: 50px;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+}
