@@ -1,6 +1,5 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import {SliderData} from '../features/SliderData';
-import {Route, Switch, useHistory} from "react-router-dom";
 
 import ElementsSliderFirstPage from "../pages/ElementsSliderFirstPage/ElementsSliderFirstPage";
 import ElementsSliderSecondPage from "../pages/ElementsSliderSecondPage/ElementsSliderSecondPage";
@@ -9,8 +8,6 @@ import ElementsSliderThirdPage from "../pages/ElementsSliderThirdPage/ElementsSl
 import './ImageSlider.css'
 import Header from "../header/Header";
 const ImageSlider = ({slides}) => {
-
-    const history = useHistory()
 
     const [current, setCurrent] = useState(0)
     const [touchStart, setTouchStart] = React.useState(0);
@@ -49,25 +46,14 @@ const ImageSlider = ({slides}) => {
         }
     }
 
-    // const checkToken = () => {
-    //     history.push('/first_page')
-    // }
-    // useEffect(() => {
-    //   if (SliderData.find(e => e.firstImage ? e.firstImage : e)){
-    //       return checkToken()
-    //   }
-    // },[])
-
     return (
         <section className="container__slider">
             {SliderData.map((slide, index) => {
                 return (
-                    // <>
                         <div key={index} className={index === current ? 'slide active' : 'slide'} >
                             {index === current && (
                                 <div className="container__slider_content" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd} >
                                     <Header/>
-                                    <Switch>
                                         {
                                             slide.firstImage ?
                                                     <ElementsSliderFirstPage/>
@@ -81,11 +67,9 @@ const ImageSlider = ({slides}) => {
                                                             <ElementsSliderFirstPage/>
 
                                         }
-                                    </Switch>
                                 </div>
                             )}
                         </div>
-                    // </>
                 )
             })}
         </section>
